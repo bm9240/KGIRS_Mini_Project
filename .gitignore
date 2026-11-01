@@ -1,0 +1,42 @@
+# Environment and virtual environments
+.env
+.venv/
+venv/
+env/
+
+# Python cache and tooling
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Data and generated artifacts
+data/raw/**
+!data/raw/retraction_watch/
+!data/raw/pmc_xml/
+!data/raw/retraction_watch/.gitkeep
+!data/raw/pmc_xml/.gitkeep
+data/interim/**
+!data/interim/.gitkeep
+data/processed/**
+!data/processed/.gitkeep
+data/annotations/**
+!data/annotations/.gitkeep
+models/**
+!models/.gitkeep
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+tmp/
+temp/
+
+# IDE and OS files
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db

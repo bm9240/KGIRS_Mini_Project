@@ -1,0 +1,13 @@
+pandas
+numpy
+requests
+lxml
+python-dotenv
+pydantic
+scikit-learn
+neo4j
+fastapi
+uvicorn
+streamlit
+sentence-transformers
+faiss-cpu

@@ -11,3 +11,4 @@ uvicorn
 streamlit
 sentence-transformers
 faiss-cpu
+plotly

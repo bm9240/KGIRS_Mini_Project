@@ -1,4 +1,4 @@
-# Environment and virtual environments
+git# Environment and virtual environments
 .env
 .venv/
 venv/
@@ -13,19 +13,25 @@ __pycache__/
 .ruff_cache/
 
 # Data and generated artifacts
-data/raw/**
+data/raw/*
 !data/raw/retraction_watch/
 !data/raw/pmc_xml/
-!data/raw/retraction_watch/.gitkeep
-!data/raw/pmc_xml/.gitkeep
-data/interim/**
-!data/interim/.gitkeep
-data/processed/**
-!data/processed/.gitkeep
-data/annotations/**
-!data/annotations/.gitkeep
-models/**
-!models/.gitkeep
+data/raw/retraction_watch/*
+data/raw/pmc_xml/*
+data/interim/*
+data/processed/*
+data/annotations/*
+models/*
+
+# Local model and embedding caches
+.cache/
+.huggingface/
+*.faiss
+*.index
+*.safetensors
+*.ckpt
+*.pt
+*.pth
 
 # Temporary files
 *.tmp
@@ -34,9 +40,16 @@ models/**
 tmp/
 temp/
 
+# Test and coverage output
+.coverage
+coverage.xml
+htmlcov/
+
 # IDE and OS files
 .vscode/
 .idea/
+.ipynb_checkpoints/
+.streamlit/secrets.toml
 *.swp
 .DS_Store
 Thumbs.db
